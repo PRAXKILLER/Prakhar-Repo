@@ -2,7 +2,6 @@ const airlineModel = require('../models/ariline.model');
 
 const getAllAirlines = (req,res)=>{
 
-    console.log("Hello")
     airlineModel.find({}).exec((error,data)=>{
         if(error)
         {
